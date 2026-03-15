@@ -5,23 +5,23 @@
 class AgentDeck < Formula
   desc "Terminal session manager for AI coding agents"
   homepage "https://github.com/qzchenwl/agent-deck"
-  version "0.26.0-cwl.2"
+  version "0.26.0-cwl.3"
   license "MIT"
 
   depends_on "tmux"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/qzchenwl/agent-deck/releases/download/v0.26.0-cwl.2/agent-deck_0.26.0-cwl.2_darwin_amd64.tar.gz"
-      sha256 "02bed583fa56b5a7d9df38083c85987a0c4f73775b86d8b8482be089ec5e6498"
+      url "https://github.com/qzchenwl/agent-deck/releases/download/v0.26.0-cwl.3/agent-deck_0.26.0-cwl.3_darwin_amd64.tar.gz"
+      sha256 "8552f73b53dd05ef5860f9e39b4f60e383730d1bb0fca75b828dabb9cafffa02"
 
       define_method(:install) do
         bin.install "agent-deck"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/qzchenwl/agent-deck/releases/download/v0.26.0-cwl.2/agent-deck_0.26.0-cwl.2_darwin_arm64.tar.gz"
-      sha256 "e072f08ec78500bb6502c87d20854c4217069d1a64bf5ae3c0a046657dc2446f"
+      url "https://github.com/qzchenwl/agent-deck/releases/download/v0.26.0-cwl.3/agent-deck_0.26.0-cwl.3_darwin_arm64.tar.gz"
+      sha256 "7791eec5c6f1bab98a869525584e1270f3c9c12211fff12aca189c9f20a1d055"
 
       define_method(:install) do
         bin.install "agent-deck"
@@ -31,15 +31,15 @@ class AgentDeck < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/qzchenwl/agent-deck/releases/download/v0.26.0-cwl.2/agent-deck_0.26.0-cwl.2_linux_amd64.tar.gz"
-      sha256 "d0b776d755114dc4b72f93bb05776134e6225b47e8b034981eac83b3014df2e8"
+      url "https://github.com/qzchenwl/agent-deck/releases/download/v0.26.0-cwl.3/agent-deck_0.26.0-cwl.3_linux_amd64.tar.gz"
+      sha256 "15a43e856c789ffb51dd4e4e498b80aed6ce67d7c98deff0879ee7334dbac84a"
       define_method(:install) do
         bin.install "agent-deck"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/qzchenwl/agent-deck/releases/download/v0.26.0-cwl.2/agent-deck_0.26.0-cwl.2_linux_arm64.tar.gz"
-      sha256 "2a1475cb0acdc8d6de97569eecf118a9b8b53300be7d9d43ff79cd25544ac802"
+      url "https://github.com/qzchenwl/agent-deck/releases/download/v0.26.0-cwl.3/agent-deck_0.26.0-cwl.3_linux_arm64.tar.gz"
+      sha256 "66183839005f19ea8d41ff9f83f649f6978e3dce4dc0e6c644ee6bc265fd982d"
       define_method(:install) do
         bin.install "agent-deck"
       end
